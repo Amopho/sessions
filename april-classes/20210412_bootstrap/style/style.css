@@ -1,1 +1,13 @@
-/* Why? */
+* {
+  box-sizing: border-box;
+}
+
+.simple-table {
+  margin: 2rem;
+  background-color: rgb(128, 124, 124);
+}
+
+.gray-border {
+  background-color: lightgray;
+  border: 2px solid gray;
+}
