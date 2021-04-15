@@ -1,3 +1,5 @@
-body {
-  background-color: hotpink;
-}
+@import "./var/variables.scss";
+
+@import "./sections";
+@import "./nav";
+@import "./footer";
