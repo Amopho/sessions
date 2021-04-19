@@ -1,3 +1,4 @@
-body {
-  background-color: hotpink;
-}
+@import "./var/variables/mixins";
+@import "./header";
+@import "./ani";
+@import "./shapes";
