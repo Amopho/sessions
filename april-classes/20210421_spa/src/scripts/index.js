@@ -3,7 +3,7 @@ function change() {
   console.log(window.document.getElementById("main"));
 
   window.document.getElementById("main").outerHTML =
-    "<h1 id='main'> HIvthis is a new texst form </h1>";
+    "<h1 id='main'> HIvthis is a new text form </h1>";
   let headerText = window.document.getElementById("main");
   console.log(headerText);
   headerText.style.backgroundColor = "orange";
@@ -12,9 +12,10 @@ function change() {
 
 function multiply() {
   let userNum = document.querySelector("#num").value;
-  // console.log(userName);
+  // console.log(userNum);
   let resultText = "";
   for (let i = 1; 1 <= 10; i++) {
-    resultText += "${i} * $";
+    resultText += `${i} * ${userNum} ${i * userNum} <br>`;
   }
+  document.querySelector(".result").innerHTML = resultText;
 }

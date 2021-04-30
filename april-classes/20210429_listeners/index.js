@@ -48,21 +48,21 @@ function keyDown(e) {
 function keyPress(e) {
   this.style.backgroundColor = "yellow";
 }
-//2 add events and call a function
+//2 and 3 add events and call a function
 const userInput = document.querySelector("#userInput");
 userInput.addEventListener("keyup", keyUp);
 userInput.addEventListener("keydown", keyDown);
 userInput.addEventListener("keypress", keyPress);
-//3 call functions
 
-const allEll = document.querySelector("*");
-console.log(allEll);
-element.childNodes.forEach((node) => {
-  if (node.nodeName === "#comment") console.log(node);
-});
+// possible methods to print comments in the console
+// const allEll = document.querySelector("*");
+// console.log(allEll);
+// element.childNodes.forEach((node) => {
+//   if (node.nodeName === "#comment") console.log(node);
+// });
 
-//all comments in your html page should be pronted in console
-// but first lets understand apply method
-const letterArr = ["a", "b"];
-const numbers = [0, 1, 2];
-lettersArr.push.apply();
+// //all comments in your html page should be pronted in console
+// // but first lets understand apply method
+// const letterArr = ["a", "b"];
+// const numbers = [0, 1, 2];
+// lettersArr.push.apply();

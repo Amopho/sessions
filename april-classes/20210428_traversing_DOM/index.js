@@ -33,12 +33,12 @@ console.log(menuList.firstElementChild);
 // type of the node element value
 console.log(Node.COMMENT_NODE);
 
-//function that displays following comments
-let displComm = function (e) {
+//function that displays consecutice comments
+let displComm = function (el) {
   let arr = [];
-  for (let i = 0; i < e.childNodes.length; i++) {
-    let node = e.childNodes[i];
-    if (node.nodeType === 8) {
+  for (let i = 0; i < el.childNodes.length; i++) {
+    let node = el.childNodes[i];
+    if (node.nodeType == 8) {
       arr.push(node);
     } else {
       arr.push.apply(arr, displComm(node));
@@ -49,6 +49,41 @@ let displComm = function (e) {
 
 let commentNodes = displComm(document);
 
-console.log(commentNodes[0].nodeValue);
+commentNodes.forEach((nodEl) => console.log(nodEl.nodeValue));
 
 //childNodes
+
+// function
+// function getComments(context) {
+//   var foundComments = [];
+//   var elementPath = [context];
+//   while (elementPath.length > 0) {
+//     var el = elementPath.pop();
+//     for (var i = 0; i < el.childNodes.length; i++) {
+//       var node = el.childNodes[i];
+//       if (node.nodeType === Node.COMMENT_NODE) {
+//         foundComments.push(node);
+//       } else {
+//         elementPath.push(node);
+//       }
+//     }
+//   }
+
+//   return foundComments;
+// }
+
+// let commNodes = getComments(document);
+
+// console.log(commNodes[1].nodeValue);
+// console.log(foundComments);
+
+// (function () {
+//   $("*")
+//     .contents()
+//     .filter(function () {
+//       return this.nodeType == 8;
+//     })
+//     .each(function (i, e) {
+//       alert(e.nodeValue);
+//     });
+// });
