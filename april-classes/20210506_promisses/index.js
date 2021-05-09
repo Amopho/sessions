@@ -40,6 +40,8 @@ checkPromise
   });
 console.log("Hi I am Ally");
 
+// did you clean your room?
+
 // Promisify with setTimeOut
 function delay(ms) {
   return new Promise((resolve) => {
