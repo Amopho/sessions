@@ -22,7 +22,7 @@ console.log(x);
 //promisses are callbacks, but are a little bit cleaner on writing - "sugar coated callbacks"
 // you use them if you dont want to wait long time for tasks that are taking too long to be done, it will work n the background. eg downloading an image, or a vid from another server.
 const checkPromise = new Promise((resolve, reject) => {
-  let x = true;
+  let x = false;
   if (x) {
     resolve("everything is cool");
   } else {
