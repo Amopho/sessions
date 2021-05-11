@@ -63,7 +63,7 @@ function fetchApi() {
 //     "title": "delectus aut autem",
 //     "completed": false
 
-// fetch todoa
+// fetch todos
 function fetchToDo() {
   fetch("https://jsonplaceholder.typicode.com/todos")
     .then((response) => response.json())
