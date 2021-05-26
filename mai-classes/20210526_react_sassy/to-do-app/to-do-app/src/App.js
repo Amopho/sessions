@@ -22,6 +22,7 @@ function App() {
         ></input>
         <input type="submit" value="Add"></input>
       </form>
+      {userInput}
     </div>
   );
 }
