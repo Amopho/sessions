@@ -12,12 +12,16 @@ function App() {
     setList(newArr);
   };
   const check = (itemToCheck) => {
+    // itemCheck has a unique number
     console.log(itemToCheck);
-    list.filter((item) => {
-      if (item.id === itemToCheck) {
-        item.done = !item.done;
-      }
-      return item;
+    setList((prevState) => {
+      prevState.filter((item) => {
+        if (item.id === itemToCheck) {
+          // reverse done
+          item.done = !item.done;
+        }
+        return item;
+      });
     });
     console.log(list);
   };
