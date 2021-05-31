@@ -11,7 +11,8 @@ const List = (props) => {
   function submitHandle(e) {
     e.preventDefault();
     // prevState - value of the last state before the recent update
-    if (userInput != "") {
+    console.log(uuidv4());
+    if (userInput !== "") {
       props.setList((prevState) => [
         ...prevState,
         { id: prevState.length, title: userInput.trim(), done: false },
