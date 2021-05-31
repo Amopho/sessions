@@ -1,5 +1,6 @@
 // Hook
 import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const List = (props) => {
   console.log(props);
@@ -9,7 +10,7 @@ const List = (props) => {
   }
   function submitHandle(e) {
     e.preventDefault();
-    //
+    // prevState - value of the last state before the recent update
     if (userInput != "") {
       props.setList((prevState) => [
         ...prevState,
