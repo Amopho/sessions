@@ -13,8 +13,7 @@ function App() {
   };
   const check = (itemToCheck) => {
     // itemCheck has a unique number
-    console.log(itemToCheck);
-    setList((prevState) => {
+    return setList((prevState) => {
       prevState.filter((item) => {
         if (item.id === itemToCheck) {
           // reverse done
@@ -23,7 +22,6 @@ function App() {
         return item;
       });
     });
-    console.log(list);
   };
   return (
     <React.Fragment>
