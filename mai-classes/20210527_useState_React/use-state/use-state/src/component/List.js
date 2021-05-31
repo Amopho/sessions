@@ -15,7 +15,7 @@ const List = (props) => {
     if (userInput !== "") {
       props.setList((prevState) => [
         ...prevState,
-        { id: prevState.length, title: userInput.trim(), done: false },
+        { id: uuidv4(), title: userInput.trim(), done: false },
       ]);
       setUserInput("");
     } else {
