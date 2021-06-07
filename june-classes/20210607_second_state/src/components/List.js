@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 const List = ({ setGrowth, log }) => {
   // run when prop changes
   useEffect(() => {
@@ -7,7 +8,9 @@ const List = ({ setGrowth, log }) => {
 
   return (
     <div>
-      <button onClick={() => setGrowth((prevState) => prevState - 1)}>-</button>
+      <button onClick={() => setGrowth((prevState) => prevState - 100)}>
+        youth elixir
+      </button>
     </div>
   );
 };
