@@ -13,8 +13,8 @@ function App() {
   };
   const check = (itemToCheck) => {
     // itemCheck has a unique number
-    return setList((prevState) => {
-      prevState.filter((item) => {
+    setList((prevState) => {
+      return prevState.filter((item) => {
         if (item.id === itemToCheck) {
           // reverse done
           item.done = !item.done;
