@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Data from "./data.json";
-// import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import ProductList from "./components/ProductList";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { fab } from "@fortawesome/free-brands-svg-icons";
-// import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 function App() {
   const [data, setData] = useState(Data);
   const [userInput, setUserInput] = useState("");
@@ -32,7 +33,7 @@ function App() {
     <React.Fragment>
       {
         //<img src={`${process.env.PUBLIC_URL}/${data[0].img}`} alt="Sushi" />
-        //<FontAwesomeIcon icon={["fab", "apple"]} size="6x" rotation={90} />
+        <FontAwesomeIcon icon={["fab", "apple"]} size="6x" rotation={90} />
       }
 
       <h1>Welcome to our online store</h1>
