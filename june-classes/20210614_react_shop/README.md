@@ -84,4 +84,8 @@ $ npm run deploy
  $ npm install --save @fortawesome/free-regular-svg-icons
 ```
 
+## To install react icons package
+
+$ npm install react-icons --save
+
 ## To use fontawesome icons
