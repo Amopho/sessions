@@ -86,6 +86,17 @@ $ npm run deploy
 
 ## To install react icons package
 
+```
 $ npm install react-icons --save
+```
 
-## To use fontawesome icons
+## To use fontawesome icons via Individual Use
+
+Import icons into each component.
+
+```
+ $ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+ $ import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+ $ const element = <FontAwesomeIcon icon={faCoffee} />
+ $ ReactDOM.render(element, document.body)
+```
